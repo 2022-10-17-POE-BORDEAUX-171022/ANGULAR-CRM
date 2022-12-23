@@ -1,6 +1,5 @@
 @import '../../../stylings/layout';
 
-
 header {
   height: 80px;
   background: var(--app-light);
@@ -16,6 +15,7 @@ nav {
   height: calc(100vh - 80px);
   background: var(--app-dark);
   z-index:1;
+  transition: 500ms;
 }
 .close-nav {
   width: 0px;
@@ -28,13 +28,13 @@ nav {
   left: 0;
   height: calc(100vh - 80px);
   background: rgba(0,0,0,0.5);
-
 }
 .post {
   overflow:auto;
 }
 .form {
   height: 100px;
+  background: var(--app-primary);
 }
 
 @media(min-width: $md-breakpoint) {
