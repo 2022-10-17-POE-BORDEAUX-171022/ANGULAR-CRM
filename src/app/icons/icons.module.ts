@@ -11,14 +11,14 @@ import { IconDeleteComponent } from './components/icon-delete/icon-delete.compon
     IconNavComponent,
     IconCloseComponent,
     IconEditComponent,
-    IconDeleteComponent
+    IconDeleteComponent,
   ],
   imports: [CommonModule, FontAwesomeModule],
   exports: [
     IconNavComponent,
     IconCloseComponent,
     IconEditComponent,
-    IconDeleteComponent
+    IconDeleteComponent,
   ],
 })
 export class IconsModule {}
