@@ -8,7 +8,7 @@ import { MediaqueriesComponent } from './cours/mediaqueries/mediaqueries.compone
 
 @NgModule({
   declarations: [AppComponent, MediaqueriesComponent],
-  imports: [BrowserModule, AppRoutingModule, CoreModule],
+  imports: [BrowserModule, CoreModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
   exports: [],
