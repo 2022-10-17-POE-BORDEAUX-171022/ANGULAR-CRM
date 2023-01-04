@@ -37,6 +37,6 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
   constructor(private r: Router) {
-    console.log(r.config);
+    // console.log(r.config);
   }
 }

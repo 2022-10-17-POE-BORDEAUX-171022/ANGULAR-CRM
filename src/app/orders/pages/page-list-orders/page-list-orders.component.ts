@@ -7,6 +7,8 @@ import { OrdersService } from 'src/app/core/services/orders.service';
   styleUrls: ['./page-list-orders.component.scss'],
 })
 export class PageListOrdersComponent {
+  public title: string = 'toto';
+
   constructor(private ordersService: OrdersService) {
     this.ordersService.collection$.subscribe((data) => {
       console.log(data);
