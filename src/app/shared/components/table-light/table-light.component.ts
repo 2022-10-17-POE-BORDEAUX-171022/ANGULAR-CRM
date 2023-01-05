@@ -1,11 +1,26 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-table-light',
   templateUrl: './table-light.component.html',
   styleUrls: ['./table-light.component.scss'],
 })
-export class TableLightComponent {
+export class TableLightComponent implements OnChanges, OnInit {
   @Input() public headers!: string[];
-  @Input() public collection!: any;
+  // @Input() public collection!: any;
+
+  constructor() {
+    // console.log(this.headers);
+    // console.log(this.collection);
+  }
+
+  ngOnChanges(): void {
+    // console.log(this.headers);
+    // console.log(this.collection);
+  }
+
+  ngOnInit(): void {
+    // console.log(this.headers);
+    // console.log(this.collection);
+  }
 }
