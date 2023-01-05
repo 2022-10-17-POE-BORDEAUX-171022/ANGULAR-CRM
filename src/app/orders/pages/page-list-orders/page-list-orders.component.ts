@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Order } from 'src/app/core/models/order';
 import { OrdersService } from 'src/app/core/services/orders.service';
 
@@ -8,21 +9,19 @@ import { OrdersService } from 'src/app/core/services/orders.service';
   styleUrls: ['./page-list-orders.component.scss'],
 })
 export class PageListOrdersComponent {
+  public collection$: Observable<Order[]>;
   public headers: string[];
-  public collection!: Order[];
 
   constructor(private ordersService: OrdersService) {
+    this.collection$ = this.ordersService.collection$;
     this.headers = [
       'Type',
       'Client',
       'Jours',
       'Tjm',
-      'total HT',
+      'Total HT',
       'Total TTC',
       'Status',
     ];
-    this.ordersService.collection$.subscribe((data) => {
-      this.collection = data;
-    });
   }
 }
