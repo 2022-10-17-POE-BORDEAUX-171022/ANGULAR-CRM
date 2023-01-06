@@ -11,10 +11,12 @@
       <!-- <td>{{ order.state }}</td> -->
       <td [appState]="order.state">
         <select (change)="changeState(order, $event)">
-          <option *ngFor="let state of states" [value]="state" [selected]="state === order.state">{{ state }}</option>
+          <option *ngFor="let state of states" [value]="state" [selected]="state === order.state">
+            {{ state }}
+          </option>
         </select>
       </td>
     </tr>
   </app-table-light>
-  <app-btn text="Add Order" route="add"></app-btn>
+  <app-btn label="Add order" route="add"></app-btn>
 </app-template-full-width>
