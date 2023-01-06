@@ -31,7 +31,7 @@ export class PageListOrdersComponent {
     const target = event.target as HTMLSelectElement;
     const state = target.value as StateOrder;
     this.ordersService.changeState(order, state).subscribe((data) => {
-      console.log(data);
+      Object.assign(order, data);
     });
   }
 }

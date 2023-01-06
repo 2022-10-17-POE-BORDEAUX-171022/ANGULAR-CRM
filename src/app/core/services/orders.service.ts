@@ -20,8 +20,9 @@ export class OrdersService {
 
   // change state order
   public changeState(order: Order, state: StateOrder): Observable<Order> {
-    order.state = state;
-    return this.update(order);
+    const item = new Order(order);
+    item.state = state;
+    return this.update(item);
   }
 
   // update order
