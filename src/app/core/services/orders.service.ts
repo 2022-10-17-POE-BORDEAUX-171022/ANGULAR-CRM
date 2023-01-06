@@ -32,4 +32,8 @@ export class OrdersService {
       order
     );
   }
+
+  public add(order: Order): Observable<Order> {
+    return this.httpClient.post<Order>(`${this.urlApi}/orders`, order);
+  }
 }
