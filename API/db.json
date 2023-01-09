@@ -1,12 +1,12 @@
 {
   "orders": [
     {
-      "unitPrice": 1200,
+      "prestaType": "formation",
+      "client": "Capgemini",
       "nbDays": 20,
+      "unitPrice": 1200,
       "vat": 20,
       "state": "OPTION",
-      "prestaType": "formation",
-      "client": "Capgemini2",
       "comment": "Merci Cap pour les 24k",
       "id": 1
     },
